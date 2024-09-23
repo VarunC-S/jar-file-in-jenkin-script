@@ -1,0 +1,21 @@
+pipeline {
+	agent any
+	stages
+		stage('maven')
+		{
+			steps{
+				echo "checking for pom.xml file"
+				}
+		stage('mvn')
+		{
+			steps{
+				sh "mvn clean package"
+				}
+		stage (maven1)
+		{
+			steps{
+				sh "java -jar target/java-project2-1.0-SNAPSHOT-"
+				}
+				}
+				}
+				}
