@@ -3,7 +3,7 @@ pipeline {
 	stages
 		stage('maven')
 		{
-			steps{
+			steps{ 
 				echo "checking for pom.xml file"
 				}
 		stage('mvn')
